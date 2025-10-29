@@ -1,0 +1,113 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using Kendo.Mvc.UI
+
+@* @model List<Technical_Exam.Domain.Entities.Position>
+<div>
+    <h1>Positions<a class="btn btn-primary ms-3" asp-controller="Positions" asp-action="Add">Create</a></h1>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Location</th>
+            <th>Job</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Employee Assigned</th>
+            <th>Created By</th>
+            <th>Time Created</th>
+            <th>Updated By</th>
+            <th>Last Updated</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var position in Model)
+        {
+            <tr>
+                <td>@position.PositionId</td>
+                <td>@position.PositionName</td>
+                <td>@position.DepartmentId</td>
+                <td>@position.LocationId</td>
+                <td>@position.JobId</td>
+                <td>@position.EmploymentType</td>
+                <td>@position.EmploymentStatus</td>
+                <td>@position.EmployeeId</td>
+                <td>@position.CreatedById</td>
+                <td>@position.TimeCreated</td>
+                <td>@position.UpdatedById</td>
+                <td>@position.LastUpdated</td>
+                <td>
+                    <a class="btn btn-primary" asp-controller="Positions" asp-action="Edit" asp-route-id="@position.PositionId">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table> *@
+
+@model Technical_Exam.Infrastructure.Models.PositionViewModel;
+<h1>Positions</h1>
+
+@*//taken from KendoUI scaffolding template*@
+@(
+Html.Kendo().Grid<Technical_Exam.Domain.Entities.Position>()
+    .Name("grid")
+       .Columns(columns =>
+    {
+        columns.Bound(p => p.PositionId).Filterable(false);
+        columns.Bound(p => p.PositionName);
+
+        @* columns.Bound(p => p.DepartmentId); *@
+        columns.ForeignKey(p => p.DepartmentId, Model.Departments, "Id", "Name").EditorTemplateName("DropDownDepartments").Title("Department");
+
+        @* columns.Bound(p => p.LocationId); *@
+        columns.ForeignKey(p => p.LocationId, Model.Locations, "Id", "Name").EditorTemplateName("DropDownLocations").Title("Location");
+
+        @* columns.Bound(p => p.JobId); *@
+        columns.ForeignKey(p => p.JobId, Model.Jobs, "Id", "Name").EditorTemplateName("DropDownJobs").Title("Job");
+
+        columns.Bound(p => p.EmploymentType).EditorTemplateName("DropDownEmploymentType");
+        columns.Bound(p => p.EmploymentStatus).EditorTemplateName("DropDownEmploymentStatus");
+
+        @* columns.Bound(p => p.EmployeeId); *@
+        columns.ForeignKey(p => p.EmployeeId, Model.Employees, "Id", "Name").EditorTemplateName("DropDownEmployees").Title("Employee");
+
+        @* columns.Bound(p => p.CreatedById); *@
+        columns.ForeignKey(p => p.CreatedById, Model.Employees, "Id", "Name").EditorTemplateName("DropDownCreators").Title("Created By");
+
+        columns.Bound(p => p.TimeCreated).Format("{0:MM/dd/yyyy}");
+        @* columns.Bound(p => p.UpdatedById); *@
+        columns.ForeignKey(p => p.UpdatedById, Model.Employees, "Id", "Name").EditorTemplateName("DropDownUpdaters").Title("Updated By");
+
+        columns.Bound(p => p.LastUpdated).Format("{0:MM/dd/yyyy}");
+        columns.Command(command => { command.Edit(); command.Destroy(); }).Width(150);
+    })
+        .Editable(editable => editable.Mode(GridEditMode.InLine))
+        .ToolBar(toolbar =>
+        {
+            toolbar.Create();
+        })
+        .Pageable()
+        .Sortable()
+        .Filterable()
+        .DataSource(dataSource => dataSource
+             .Ajax()
+             .PageSize(5)
+             .Model(model => {
+                 model.Id(p => p.PositionId);
+                 model.Field(p => p.PositionId).Editable(false);
+                 model.Field(p => p.TimeCreated).Editable(false);
+                 model.Field(p => p.LastUpdated).Editable(false);
+             })
+             .Read(read => read.Action("Read", "Positions"))
+             .Create(update => update.Action("Create", "Positions"))
+             .Update(update => update.Action("Update", "Positions"))
+             .Destroy(update => update.Action("Delete", "Positions"))
+    )
+)

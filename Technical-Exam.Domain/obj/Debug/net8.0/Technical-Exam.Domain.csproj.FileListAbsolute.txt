@@ -1,0 +1,11 @@
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Domain\bin\Debug\net8.0\Technical-Exam.Domain.deps.json
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Domain\bin\Debug\net8.0\Technical-Exam.Domain.dll
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Domain\bin\Debug\net8.0\Technical-Exam.Domain.pdb
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Domain\obj\Debug\net8.0\Technical-Exam.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Domain\obj\Debug\net8.0\Technical-Exam.Domain.AssemblyInfoInputs.cache
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Domain\obj\Debug\net8.0\Technical-Exam.Domain.AssemblyInfo.cs
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Domain\obj\Debug\net8.0\Technical-Exam.Domain.csproj.CoreCompileInputs.cache
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Domain\obj\Debug\net8.0\Technical-Exam.Domain.dll
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Domain\obj\Debug\net8.0\refint\Technical-Exam.Domain.dll
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Domain\obj\Debug\net8.0\Technical-Exam.Domain.pdb
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Domain\obj\Debug\net8.0\ref\Technical-Exam.Domain.dll

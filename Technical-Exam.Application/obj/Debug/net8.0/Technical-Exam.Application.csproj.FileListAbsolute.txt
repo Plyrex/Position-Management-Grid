@@ -1,0 +1,15 @@
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\bin\Debug\net8.0\Technical-Exam.Application.deps.json
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\bin\Debug\net8.0\Technical-Exam.Application.dll
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\bin\Debug\net8.0\Technical-Exam.Application.pdb
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\bin\Debug\net8.0\Technical-Exam.Domain.dll
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\bin\Debug\net8.0\Technical-Exam.Domain.pdb
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\obj\Debug\net8.0\Technical-Exam.Application.csproj.AssemblyReference.cache
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\obj\Debug\net8.0\Technical-Exam.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\obj\Debug\net8.0\Technical-Exam.Application.AssemblyInfoInputs.cache
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\obj\Debug\net8.0\Technical-Exam.Application.AssemblyInfo.cs
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\obj\Debug\net8.0\Technical-Exam.Application.csproj.CoreCompileInputs.cache
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\obj\Debug\net8.0\Technica.4C3E6FF6.Up2Date
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\obj\Debug\net8.0\Technical-Exam.Application.dll
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\obj\Debug\net8.0\refint\Technical-Exam.Application.dll
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\obj\Debug\net8.0\Technical-Exam.Application.pdb
+C:\Users\saeed\OneDrive\Desktop\Technical-Exam\Technical-Exam\Technical-Exam.Application\obj\Debug\net8.0\ref\Technical-Exam.Application.dll

@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@using Technical_Exam.Infrastructure.Models
+@{
+    var employees = ViewData["Employees"] as List<DropDownMenu>;
+}
+
+@Html.DropDownListFor(
+    m => m,
+    new SelectList(employees, "Id", "Name", Model),
+    "-- Select Employee --",
+    new { @class = "form-control" }
+)
+
